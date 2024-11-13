@@ -1,0 +1,21 @@
+version: 4.1.15
+steps:
+  - prompt: Reload the webpage.
+    commands:
+      - command: press-keys
+        keys:
+          - f5
+  - prompt: Reload the webpage.
+    commands:
+      - command: hover-text
+        text: Reload
+        description: reload button on the webpage
+        action: click
+  - prompt: Assert that the "Contact Us" link is visible.
+    commands: []
+  - prompt: Click on the "Contact Us" link.
+    commands: []
+  - prompt: >-
+      Assert that the contact form or information page loads without errors.  #
+      Use the content of the file from the environment
+    commands: []
