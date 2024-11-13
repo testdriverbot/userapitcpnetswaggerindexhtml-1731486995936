@@ -1,0 +1,12 @@
+version: 4.1.15
+steps:
+  - prompt: Click the "Reload" button.
+    commands:
+      - command: hover-text
+        text: Reload
+        description: reload button on the page
+        action: click
+  - prompt: Assert that the webpage attempts to reload.
+    commands:
+      - command: assert
+        expect: the page content changes or reloads
