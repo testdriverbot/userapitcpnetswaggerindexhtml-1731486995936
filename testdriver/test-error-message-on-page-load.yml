@@ -1,0 +1,16 @@
+version: 4.1.15
+steps:
+  - prompt: Attempt to load the website.
+    commands:
+      - command: hover-text
+        text: Reload
+        description: reload button on the webpage
+        action: click
+  - prompt: Attempt to load the website.
+    commands:
+      - command: hover-text
+        text: try running Windows Network Diagnostics
+        description: link to run network diagnostics
+        action: click
+      - command: wait-for-text
+        text: Troubleshooting has completed
