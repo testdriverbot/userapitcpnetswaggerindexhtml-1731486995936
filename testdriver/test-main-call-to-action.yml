@@ -1,0 +1,28 @@
+version: 4.1.15
+steps:
+  - prompt: Reload the webpage.
+    commands:
+      - command: press-keys
+        keys:
+          - control
+          - r
+  - prompt: Reload the webpage.
+    commands:
+      - command: hover-text
+        text: Reload
+        description: reload button on the error page
+        action: click
+  - prompt: Reload the webpage.
+    commands:
+      - command: press-keys
+        keys:
+          - control
+          - r
+  - prompt: Assert that the main call to action is visible on the homepage.
+    commands: []
+  - prompt: Click the call to action button.
+    commands: []
+  - prompt: >-
+      Assert that clicking the button navigates to the correct page or section. 
+      # Use the content of the file from the environment
+    commands: []
