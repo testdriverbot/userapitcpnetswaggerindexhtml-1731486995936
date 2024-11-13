@@ -1,0 +1,82 @@
+version: 4.1.15
+steps:
+  - prompt: Navigate to the website using the URL.
+    commands:
+      - command: hover-text
+        text: userapi.tcp.net
+        description: address bar
+        action: click
+      - command: press-keys
+        keys:
+          - control
+          - a
+      - command: press-keys
+        keys:
+          - backspace
+      - command: type
+        text: https://example.com
+      - command: press-keys
+        keys:
+          - enter
+  - prompt: Navigate to the website using the URL.
+    commands:
+      - command: hover-text
+        text: userapi.tcp.net
+        description: address bar
+        action: click
+      - command: press-keys
+        keys:
+          - control
+          - a
+      - command: press-keys
+        keys:
+          - backspace
+      - command: type
+        text: https://example.com
+      - command: press-keys
+        keys:
+          - enter
+  - prompt: Navigate to the website using the URL.
+    commands:
+      - command: hover-text
+        text: userapi.tcp.net
+        description: address bar
+        action: click
+      - command: press-keys
+        keys:
+          - control
+          - a
+      - command: press-keys
+        keys:
+          - backspace
+      - command: type
+        text: https://www.google.com
+      - command: press-keys
+        keys:
+          - enter
+  - prompt: Navigate to the website using the URL.
+    commands:
+      - command: hover-text
+        text: userapi.tcp.net
+        description: address bar
+        action: click
+      - command: press-keys
+        keys:
+          - control
+          - a
+      - command: press-keys
+        keys:
+          - backspace
+      - command: type
+        text: https://www.example.com
+      - command: press-keys
+        keys:
+          - enter
+  - prompt: Assert that the webpage loads successfully.
+    commands:
+      - command: assert
+        expect: This site can't be reached
+  - prompt: >-
+      Assert that the website logo is visible.  # Use the content of the file
+      from the environment
+    commands: []
